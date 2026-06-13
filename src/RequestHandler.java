@@ -8,22 +8,22 @@ import java.io.PrintWriter;
 
 public class RequestHandler extends HttpServlet {
     @Override
-    protected doGet(HttpServletRequest req,HttpServletResponse rep)
-        throws IOExeption {
+    protected void doGet(HttpServletRequest req,HttpServletResponse rep)
+        throws IOException {
             handleRequest(req,rep);
     }
 
     @Override
-    protected doPost(HttpServletRequest req,HttpServletResponse rep)
-        throws IOExeption {
+    protected void doPost(HttpServletRequest req,HttpServletResponse rep)
+        throws IOException {
             handleRequest(req,rep);
     }
 
-    private String handleRequest(HttpServletRequest req, HttpServletResponse rep)
-            throws IOExeption {
-                String path = req.getRequestURI().substring(req.getContextPath().length());
-                rep.setContentType("text/html;charset=UTF-8");
-                PrintWriter out = rep.getWriter();
-                out.println("URL recue :" + path);
+     private void handleRequest(HttpServletRequest req, HttpServletResponse rep) // ✅ void
+            throws IOException {
+        String path = req.getRequestURI().substring(req.getContextPath().length());
+        rep.setContentType("text/html;charset=UTF-8");
+        PrintWriter out = rep.getWriter();
+        out.println("URL reçue : " + path);
     }
 }
