@@ -4,9 +4,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import mg.itu.kiady.annotation.Controller;
-import mg.itu.kiady.annotation.UrlMapping;
-import mg.itu.kiady.dto.ControllerMethodUrlDTO;
+import src.mg.itu.kiady.annotation.Controller;
+import src.mg.itu.kiady.annotation.UrlMapping;
+import src.mg.itu.kiady.dto.ControllerMethodUrlDTO;
 
 public class Util {
 
