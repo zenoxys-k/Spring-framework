@@ -1,12 +1,12 @@
-package src.mg.itu.kiady.util;
+package mg.itu.kiady.util;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import src.mg.itu.kiady.annotation.Controller;
-import src.mg.itu.kiady.annotation.UrlMapping;
-import src.mg.itu.kiady.dto.ControllerMethodUrlDTO;
+import mg.itu.kiady.annotation.Controller;
+import mg.itu.kiady.annotation.UrlMapping;
+import mg.itu.kiady.dto.ControllerMethodUrlDTO;
 
 public class Util {
 
@@ -82,4 +82,3 @@ public void loadClasses(File directory, String packageName, List<Class<?>> listC
     }
 }
 
-}

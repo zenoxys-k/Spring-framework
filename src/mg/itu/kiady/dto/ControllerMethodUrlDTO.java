@@ -1,12 +1,12 @@
-package src.mg.itu.kiady.dto;
+package mg.itu.kiady.dto;
 
 import java.lang.reflect.Method;
 
 public class ControllerMethodUrlDTO {
     private Class<?> controllerClass;
-    private String method;
+    private java.lang.reflect.Method method;
 
-    public ControllerMethodUrlDTO(Class<?> controllerClass, String method) {
+    public ControllerMethodUrlDTO(Class<?> controllerClass, java.lang.reflect.Method method) {
         this.controllerClass = controllerClass;
         this.method = method;
     }
@@ -15,7 +15,7 @@ public class ControllerMethodUrlDTO {
         return controllerClass;
     }
 
-    public String getMethod() {
+    public Method getMethod() {
         return method;
     }
 
@@ -23,7 +23,7 @@ public class ControllerMethodUrlDTO {
         this.controllerClass = controllerClass;
     }
 
-    public void setMethod(String method) {
+    public void setMethod(Method method) {
         this.method = method;
     }
 
