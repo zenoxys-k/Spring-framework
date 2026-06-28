@@ -19,7 +19,7 @@ public class RequestHandler extends HttpServlet {
             handleRequest(req,rep);
     }
 
-     private void handleRequest(HttpServletRequest req, HttpServletResponse rep) // ✅ void
+     private void handleRequest(HttpServletRequest req, HttpServletResponse rep)
             throws IOException {
         String path = req.getRequestURI().substring(req.getContextPath().length());
         rep.setContentType("text/html;charset=UTF-8");
